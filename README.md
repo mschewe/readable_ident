@@ -1,6 +1,5 @@
 # ReadableIdent
 
-TODO: Write a gem description
 
 ## Installation
 
@@ -18,7 +17,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+class SomeModel < ActiveRecord::Base
+
+  generate_ident :ident, prefix: 'p-', length: 5
+
+end
+```
+
+This will automatically generate an ident for the given field (:ident) with the prefix 'p-' and the length of 5.
+
 
 ## Contributing
 
