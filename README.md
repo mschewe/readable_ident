@@ -1,4 +1,4 @@
-# ReadableIdent
+# Readable Ident
 
 [![Build Status](https://travis-ci.org/mschewe/readable_ident.png?branch=master)](https://travis-ci.org/mschewe/readable_ident) [![Code Climate](https://codeclimate.com/github/mschewe/readable_ident.png)](https://codeclimate.com/github/mschewe/readable_ident)
 
@@ -33,17 +33,17 @@ Or install it yourself as:
 
 First create a migration to add a field to the model
 
-```rails g migration add_ident_to_device ident:string```
+```rails g migration add_r_ident_to_device r_ident:string```
 
 Then add the following to your model:
 
 ```
 class SomeModel < ActiveRecord::Base
-  generate_ident :ident, prefix: 'p-', length: 5
+  readable_ident prefix: s, seperator: '~', length: 5
 end
 ```
 
-This will automatically generate an ident for the given field (:ident) with the prefix 'p-' and the length of 5 e.g. p-iq12xk
+This will automatically generate an unique ident for the field r_ident with the prefix 's', the seperator '~' and the length of 5 e.g. s~iq12xk
 
 
 ## Contributing
