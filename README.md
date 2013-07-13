@@ -1,5 +1,7 @@
 # ReadableIdent
 
+[![Build Status](https://travis-ci.org/mschewe/readable_ident.png?branch=master)](https://travis-ci.org/mschewe/readable_ident) [![Code Climate](https://codeclimate.com/github/mschewe/readable_ident.png)](https://codeclimate.com/github/mschewe/readable_ident)
+
 UUIDs are great, but not really easy to remember and compare by humans.
 At many points you might need a human readable ident, that is not the database id field.
 To use the database id might be appealing, but if you need to backup and probably restore data this is no good.
