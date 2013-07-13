@@ -8,11 +8,11 @@ To use the database id might be appealing, but if you need to backup and probabl
 
 This gem aims to help you generate unique short idents for ActiveRecord models.
 
-It makes it possible to autogenerate a quiet readable unique ident, that consists of an (optional) prefix and a variable amount of [a-zA-Z0-9]{n}.
+It makes it possible to autogenerate a quiet readable unique ident, that consists of an (optional) prefix and a variable amount of ```[a-zA-Z0-9]{n}```.
 
-e.g. device-9fX compared to 170a3d59-db5d-48d4-b064-1fd127fde049
+e.g. ```device-9fX``` compared to ```170a3d59-db5d-48d4-b064-1fd127fde049```
 
-For example if you decide to use the signs, there are (26*2 + 10)^3 = 238.328 possible combinations, that should be enough for most cases.
+For example if you decide to use the signs, there are ```(26*2 + 10)^3 = 238.328``` possible combinations, that should be enough for most cases. But the length can also be customized.
 
 
 ## Installation
@@ -43,8 +43,7 @@ class SomeModel < ActiveRecord::Base
 end
 ```
 
-This will automatically generate an unique ident for the field r_ident with the prefix 's', the seperator '~' and the length of 5 e.g. s~iq12xk
-
+This will automatically generate an unique ident for the field ```r_ident``` with the prefix 's', the seperator '~' and the length of 5 e.g. s~iq12xk
 
 ## Contributing
 
