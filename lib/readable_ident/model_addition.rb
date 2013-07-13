@@ -8,21 +8,29 @@ module ReadableIdent
     extend ActiveSupport::Concern
     include ActiveModel::Validations
 
+    @options
+
     included do
-      validates :r_ident, presence: true
-      before_validation :generate_readable_ident
-      # validates :r_ident, uniqueness: true # TODO
+      validates :r_ident, presence: true, length: { minimum: 0 }
+      after_validation :generate_readable_ident
     end
 
     module ClassMethods
-      def readable_ident(params={})
-        @params = params
+      def readable_ident(options={})
+        attr_reader :options
+        class_attribute :options
+        self.options = options
       end
     end
 
     private
     def generate_readable_ident
-      write_attribute(:r_ident, ReadableIdent::generate_readable_ident(@params))
+      r_ident = ''
+      while true do
+        r_ident = ReadableIdent::generate_readable_ident(self.options)
+        break if self.class.where(r_ident: r_ident).first.nil?
+      end
+      write_attribute(:r_ident, r_ident)
     end
 
   end
