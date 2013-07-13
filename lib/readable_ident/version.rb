@@ -1,4 +1,4 @@
 # -*- encoding : utf-8 -*-
 module ReadableIdent
-  VERSION = "0.0.1.alpha"
+  VERSION = "0.0.1"
 end
