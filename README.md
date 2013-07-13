@@ -1,16 +1,16 @@
 # ReadableIdent
 
-UUIDs are great, but not really easy to remember and compare by humans. 
-At many points you might need a human readable ident, that is not the database id field. 
-To use the database id might be appealing, but if you need to backup and probably restore data this is no good. 
+UUIDs are great, but not really easy to remember and compare by humans.
+At many points you might need a human readable ident, that is not the database id field.
+To use the database id might be appealing, but if you need to backup and probably restore data this is no good.
 
-This gem aims to help you generate unique short idents for ActiveRecord models. 
+This gem aims to help you generate unique short idents for ActiveRecord models.
 
-It makes it possible to autogenerate a quiet readable unique ident, that consists of an (optional) prefix and a variable amount of [a-zA-Z0-9]{n}. 
+It makes it possible to autogenerate a quiet readable unique ident, that consists of an (optional) prefix and a variable amount of [a-zA-Z0-9]{n}.
 
 e.g. device-9fX compared to 170a3d59-db5d-48d4-b064-1fd127fde049
 
-For example if you decide to use the signs, there are (26*2 + 10)^3 = 238.328 possible combinations, that should be enough for most cases. 
+For example if you decide to use the signs, there are (26*2 + 10)^3 = 238.328 possible combinations, that should be enough for most cases.
 
 
 ## Installation
