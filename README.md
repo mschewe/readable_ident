@@ -1,6 +1,9 @@
 # Readable Ident
 
-[![Build Status](https://travis-ci.org/mschewe/readable_ident.png?branch=master)](https://travis-ci.org/mschewe/readable_ident) [![Code Climate](https://codeclimate.com/github/mschewe/readable_ident.png)](https://codeclimate.com/github/mschewe/readable_ident)
+[![Build Status](https://travis-ci.org/mschewe/readable_ident.png?branch=master)](https://travis-ci.org/mschewe/readable_ident) 
+[![Code Climate](https://codeclimate.com/github/mschewe/readable_ident.png)](https://codeclimate.com/github/mschewe/readable_ident)
+[![Coverage Status](https://coveralls.io/repos/mschewe/readable_ident/badge.png)](https://coveralls.io/r/mschewe/readable_ident)
+[![Dependency Status](https://gemnasium.com/mschewe/readable_ident.png)](https://gemnasium.com/mschewe/readable_ident)
 
 UUIDs are great, but not really easy to remember and compare by humans.
 At many points you might need a human readable ident, that is not the database id field.
