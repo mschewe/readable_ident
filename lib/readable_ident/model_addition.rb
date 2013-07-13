@@ -7,7 +7,6 @@ module ReadableIdent
   module ModelAddition
     extend ActiveSupport::Concern
     include ActiveModel::Validations
-    include ActiveModel::MassAssignmentSecurity
 
     included do
       validates :r_ident, presence: true
