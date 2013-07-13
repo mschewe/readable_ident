@@ -36,13 +36,12 @@ module ReadableIdent
     raise ArgumentError, 'seperator length must be 1' \
       unless options[:seperator].length < 2
 
-
     raise ArgumentError, 'prefix is not in specified regex' \
       if options[:prefix].match(@@regex_prefix).nil?
 
-
     raise ArgumentError, 'seperator is not in specified regex' \
-      if @@regex_seperator.match(options[:seperator]).nil?
+      if options[:seperator].match(@@regex_seperator).nil?
   end
 
 end
+
