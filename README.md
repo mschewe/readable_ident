@@ -1,5 +1,6 @@
 # Readable Ident
 
+[![Gem Version](https://badge.fury.io/rb/readable_ident.png)](http://badge.fury.io/rb/readable_ident)
 [![Build Status](https://travis-ci.org/mschewe/readable_ident.png?branch=master)](https://travis-ci.org/mschewe/readable_ident) 
 [![Code Climate](https://codeclimate.com/github/mschewe/readable_ident.png)](https://codeclimate.com/github/mschewe/readable_ident)
 [![Coverage Status](https://coveralls.io/repos/mschewe/readable_ident/badge.png)](https://coveralls.io/r/mschewe/readable_ident)
