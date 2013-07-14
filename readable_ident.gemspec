@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{Generates a readable ident for a given model}
   gem.summary       = gem.description
   gem.homepage      = "https://github.com/mschewe/readable_ident"
-  gem.spec.licenses = "MIT"
+  gem.licenses      = "MIT"
   
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
