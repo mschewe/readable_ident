@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["schewe.mark@gmail.com"]
   gem.description   = %q{Generates a readable ident for a given model}
   gem.summary       = gem.description
-  gem.homepage      = "https://github.com/mschewe/readable_ident"
+  gem.homepage      = "https://github.com/sigint_io/readable_ident"
   gem.licenses      = "MIT"
   
   gem.files         = `git ls-files`.split($/)
