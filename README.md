@@ -6,6 +6,7 @@
 [![Coverage Status](https://coveralls.io/repos/mschewe/readable_ident/badge.png)](https://coveralls.io/r/mschewe/readable_ident)
 [![Dependency Status](https://gemnasium.com/mschewe/readable_ident.png)](https://gemnasium.com/mschewe/readable_ident)
 
+
 UUIDs are great, but not really easy to remember and compare by humans.
 At many points you might need a human readable ident, that is not the database id field.
 To use the database id might be appealing, but if you need to backup and probably restore data this is no good.
